@@ -8,7 +8,6 @@ for (i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
 }
-
 let pos = arr.filter(elem =>(elem>0));
 console.log(`1. Сума позитивних чисел = ${sum}, їх кількість = ${pos.length}`);
 
