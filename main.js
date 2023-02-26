@@ -22,15 +22,15 @@ console.log(`3. Максимальний елемент масиву = ${max}, �
 let negative = arr.filter(elem =>(elem <0));
 console.log(`4. Кількість негативних елементів = ${negative.length}`);
 
-let qua_odd = arr.filter(elem =>(elem>0) && (elem % 2 != 0));
+let qua_odd = arr.filter(elem =>(elem>0) && (elem % 2 !== 0));
 console.log(`5. Кількість непарних позитивних елементів = ${qua_odd.length}`);
 
-let qua_even = arr.filter(elem =>(elem>0) && (elem % 2 == 0));
+let qua_even = arr.filter(elem =>(elem>0) && (elem % 2 === 0));
 console.log(`6. Кількість парних позитивних елементів = ${qua_even.length}`);
 
 let sum1 = 0;
 for (i = 0; i < arr.length; i++) {
-    if (arr[i] > 0 && arr[i] % 2 == 0){
+    if (arr[i] > 0 && arr[i] % 2 === 0){
         sum1 += arr[i];
     }
 }
@@ -38,7 +38,7 @@ console.log(`7. Сума парних позитивних елементів = 
 
 let sum2 = 0;
 for (i = 0; i < arr.length; i++) {
-    if (arr[i] > 0 && arr[i] % 2 != 0){
+    if (arr[i] > 0 && arr[i] % 2 !== 0){
         sum2 += arr[i];
     }
 }
